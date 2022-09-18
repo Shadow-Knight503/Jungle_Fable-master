@@ -192,17 +192,11 @@ namespace TMPro
                     // Get information about the link.
                     TMP_LinkInfo linkInfo = m_TextComponent.textInfo.linkInfo[linkIndex];
 
-<<<<<<< HEAD
-                    // Send the event to any listeners. 
-=======
                     // Send the event to any listeners.
->>>>>>> 4522e3b3 (initial commit)
                     SendOnLinkSelection(linkInfo.GetLinkID(), linkInfo.GetLinkText(), linkIndex);
                 }
                 #endregion
             }
-<<<<<<< HEAD
-=======
             else
             {
                 // Reset all selections given we are hovering outside the text container bounds.
@@ -211,7 +205,6 @@ namespace TMPro
                 m_lastWordIndex = -1;
                 m_lastLineIndex = -1;
             }
->>>>>>> 4522e3b3 (initial commit)
         }
 
 

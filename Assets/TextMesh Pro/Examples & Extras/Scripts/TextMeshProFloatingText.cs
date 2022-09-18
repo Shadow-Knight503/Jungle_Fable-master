@@ -21,11 +21,6 @@ namespace TMPro.Examples
         Quaternion lastRotation = Quaternion.identity;
 
         public int SpawnType;
-<<<<<<< HEAD
-
-        //private int m_frame = 0;
-
-=======
         public bool IsTextObjectScaleStatic;
 
         //private int m_frame = 0;
@@ -39,7 +34,6 @@ namespace TMPro.Examples
             new WaitForSeconds(0.8f), new WaitForSeconds(0.85f), new WaitForSeconds(0.9f), new WaitForSeconds(0.95f), new WaitForSeconds(1.0f),
         };
 
->>>>>>> 4522e3b3 (initial commit)
         void Awake()
         {
             m_transform = transform;
@@ -73,11 +67,7 @@ namespace TMPro.Examples
                 //m_textMeshPro.enableShadows = false;
                 m_textMeshPro.enableKerning = false;
                 m_textMeshPro.text = string.Empty;
-<<<<<<< HEAD
-                m_textMeshPro.isTextObjectScaleStatic = true;
-=======
                 m_textMeshPro.isTextObjectScaleStatic = IsTextObjectScaleStatic;
->>>>>>> 4522e3b3 (initial commit)
 
                 StartCoroutine(DisplayTextMeshProFloatingText());
             }
@@ -163,20 +153,12 @@ namespace TMPro.Examples
                     m_transform.forward = new Vector3(dir.x, 0, dir.z);
                 }
 
-<<<<<<< HEAD
-                yield return new WaitForEndOfFrame();
-=======
                 yield return k_WaitForEndOfFrame;
->>>>>>> 4522e3b3 (initial commit)
             }
 
             //Debug.Log("Done Counting down.");
 
-<<<<<<< HEAD
-            yield return new WaitForSeconds(Random.Range(0.1f, 1.0f));
-=======
             yield return k_WaitForSecondsRandom[Random.Range(0, 19)];
->>>>>>> 4522e3b3 (initial commit)
 
             m_floatingText_Transform.position = start_pos;
 
@@ -226,22 +208,12 @@ namespace TMPro.Examples
                     m_transform.forward = new Vector3(dir.x, 0, dir.z);
                 }
 
-<<<<<<< HEAD
-
-
-                yield return new WaitForEndOfFrame();
-=======
                 yield return k_WaitForEndOfFrame;
->>>>>>> 4522e3b3 (initial commit)
             }
 
             //Debug.Log("Done Counting down.");
 
-<<<<<<< HEAD
-            yield return new WaitForSeconds(Random.Range(0.1f, 1.0f));
-=======
             yield return k_WaitForSecondsRandom[Random.Range(0, 20)];
->>>>>>> 4522e3b3 (initial commit)
 
             m_floatingText_Transform.position = start_pos;
 
