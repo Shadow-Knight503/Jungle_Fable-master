@@ -12814,7 +12814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4846558290954104595, guid: 67f2238d8b0e2ec41b0825c8ac5b61e8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.2
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4846558290954104595, guid: 67f2238d8b0e2ec41b0825c8ac5b61e8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12883,9 +12883,9 @@ MonoBehaviour:
   Player2Point: {fileID: 0}
   Player3Point: {fileID: 0}
   Player4Point: {fileID: 0}
-  RespawnPoint: {fileID: 1190334588}
+  RespawnPoint: {fileID: 1875250433}
   TrigPanel: {fileID: 76486608}
-  RP: 7
+  RP: 17
 --- !u!4 &2038058984 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2661408394674872912, guid: ca903d7a399398d4a96e745677b8c772, type: 3}
