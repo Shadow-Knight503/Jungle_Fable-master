@@ -1,14 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Player4 : MonoBehaviour
 {
     public Route currentRoute;
     public int routePosition;
     public int steps;
-    bool isMoving;
-    public Player player;
+    public bool isMoving;
+    public bool Rolled = false;
+    public CamScript Cam;
+    public TextMeshProUGUI DiceTxt;
+    public DiceShow DShow;
+    public Player Play;
+    int Num;
+    bool FMove = false;
+    public bool TrueRolled = false;
     public int PSs;
     public int PSe;
 
@@ -21,19 +30,30 @@ public class Player4 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && player.PS == PSs && !isMoving)
-        {
-            steps = Random.Range(1, 7);
-            Debug.Log("Dice Rolled" + steps);
-
-            if (routePosition + steps < currentRoute.childNodeList.Count)
-            {
+        if (!TrueRolled && Rolled && Play.PS == PSs && !isMoving) {
+            if(steps == 6) {
+                TrueRolled = true;
+                DiceTxt.text = "You can move now!";
+            }
+            DiceTxt.text = "Roll 6 to move";
+            isMoving = false;
+            Play.PS = 2;
+            Rolled = false; 
+            DiceTxt.text = "Ai's Turn";
+        } 
+        if(TrueRolled && Rolled && !isMoving && Play.PS == PSs) {
+            FMove = false;
+            
+            if (routePosition + steps < currentRoute.childNodeList.Count) {
+                DShow.DiceTurn(steps);
+                StartCoroutine(Move());
+            } else {
+                Debug.Log("Rolled Number is too high");
+                DiceTxt.text = "Num too high";
+                steps = 0;
                 StartCoroutine(Move());
             }
-            else
-            {
-                Debug.Log("Rolled Number is to high");
-            }
+            Rolled = false; 
         }
     }
 
@@ -57,7 +77,7 @@ public class Player4 : MonoBehaviour
             routePosition++;
         }
         isMoving = false;
-        player.PS = PSe;
+        Play.PS = PSe;
     }
 
     bool MoveToNextNode(Vector3 goal)
