@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-
+using UnityEngine.UI;
+using TMPro;
 
 public class game_manager : MonoBehaviour
 {
@@ -10,6 +10,8 @@ public class game_manager : MonoBehaviour
     public GameObject endpanel_lost;
     public GameObject pause_panel;
     public GameObject pause_button;
+    public GameObject Rules;
+    public TextMeshProUGUI WinTxt;
 
 
     public void Pause()
@@ -30,8 +32,10 @@ public class game_manager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void Endgame(bool win) {
+    public void Endgame(bool win, string Dets) {
+        pause_button.SetActive(false);
         if (win) {
+            WinTxt.text = "Congrats " + Dets + ", You won !!!";
             endpanel_win.SetActive(true);
             if (SceneManager.GetActiveScene().buildIndex > PlayerPrefs.GetInt("LvlsUnlocked")) {
                 PlayerPrefs.SetInt("LvlsUnlocked", SceneManager.GetActiveScene().buildIndex + 1);                
@@ -47,5 +51,13 @@ public class game_manager : MonoBehaviour
 
     public void LoadLevel () {
         SceneManager.LoadScene("Level_Page");
+    }
+
+    public void ShowRules() {
+        Rules.SetActive(true);
+    }
+
+    public void HideRules() {
+        Rules.SetActive(false);
     }
 }

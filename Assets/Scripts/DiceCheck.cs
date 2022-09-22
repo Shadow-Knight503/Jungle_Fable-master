@@ -8,10 +8,10 @@ public class DiceCheck : MonoBehaviour {
     public bool OnGround;
     public int DiceSide;
     public bool Logged = false; 
-    public TextMeshProUGUI DiceTxt;
     public DiceScript Dice;
     public Player Play1;
     public AIPlayer AiPlay; 
+    public Player2 Play2;
     public CamScript Cam;
 
     // Start is called before the first frame update
@@ -38,6 +38,10 @@ public class DiceCheck : MonoBehaviour {
             if (Play1.PS == 0) {
                 Play1.steps = DiceSide;
                 Play1.Rolled = true;
+            } else if (Play1.PS == 1 && Play2.Alive) {
+                Debug.Log("PLayer 2  Works " + DiceSide.ToString());
+                Play2.steps = DiceSide;
+                Play2.Rolled = true;
             } else if (Play1.PS == 1) {
                 Debug.Log("Ai Works " + DiceSide.ToString());
                 AiPlay.steps = DiceSide;

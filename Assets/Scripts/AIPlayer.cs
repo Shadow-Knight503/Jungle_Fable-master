@@ -23,6 +23,9 @@ public class AIPlayer : MonoBehaviour
     public DiceCheck DiceChk4;
     public DiceCheck DiceChk5;
     public DiceCheck DiceChk6;
+    public AudioSource StartSound;
+    public GameObject[] UserNames;
+    public int TtlNoNames;
     public bool TrueRolled = false;
     public bool Rolling = false;
 
@@ -53,7 +56,10 @@ public class AIPlayer : MonoBehaviour
             isMoving = false;
             player.PS = 0;
             Rolled = false; 
-            DiceTxt.text = "Your Turn";
+            for (int i = 0; i < TtlNoNames; i++) {
+                UserNames[i].SetActive(false);
+            }
+            UserNames[0].SetActive(true);
         }
         if (TrueRolled && Rolled && player.PS == 1 && !isMoving) {   
             if (Dice.Thrown && Dice.Landed) {
@@ -62,7 +68,7 @@ public class AIPlayer : MonoBehaviour
                     StartCoroutine(Move());
                 } else {
                     Debug.Log("Rolled Number is too high");
-                    DiceTxt.text = "Number is too high";
+                    DiceTxt.text = "Num too high";
                     steps = 0;
                     StartCoroutine(Move());
                     DiceBtn.SetActive(true);
@@ -79,7 +85,7 @@ public class AIPlayer : MonoBehaviour
             yield break;
         }
         isMoving = true;
-
+        StartSound.Play();
         while (steps > 0)
         {
             Vector3 nextPos = currentRoute.childNodeList[routePosition + 1].position;
@@ -97,7 +103,10 @@ public class AIPlayer : MonoBehaviour
         isMoving = false;
         player.PS = 0;
         Rolled = false;
-        DiceTxt.text = "Your Turn";
+        for (int i = 0; i < TtlNoNames; i++) {
+            UserNames[i].SetActive(false);
+        }
+        UserNames[0].SetActive(true);
     }
 
     bool MoveToNextNode(Vector3 goal)

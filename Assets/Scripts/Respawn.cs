@@ -41,16 +41,19 @@ public class Respawn : MonoBehaviour {
         }
         if (Col.tag == "Player2" && player2.steps == 0)
         {
+            TrigPanel.SetActive(true);
             Player2Point.transform.position = RespawnPoint.transform.position;
             player2.routePosition = RP;
         }
         if (Col.tag == "Player3" && player3.steps == 0)
         {
+            TrigPanel.SetActive(true);
             Player3Point.transform.position = RespawnPoint.transform.position;
             player3.routePosition = RP;
         }
         if (Col.tag == "Player4" && player4.steps == 0)
         {
+            TrigPanel.SetActive(true);
             Player4Point.transform.position = RespawnPoint.transform.position;
             player4.routePosition = RP;
         }

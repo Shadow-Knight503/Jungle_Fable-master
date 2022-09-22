@@ -15,6 +15,9 @@ public class Player : MonoBehaviour
     public CamScript Cam;
     public TextMeshProUGUI DiceTxt;
     public DiceShow DShow;
+    public AudioSource StartSound;
+    public GameObject[] UserNames;
+    public int TtlNoNames;
     int Num;
     bool FMove = false;
     public bool TrueRolled = false;
@@ -30,13 +33,14 @@ public class Player : MonoBehaviour
         if (!TrueRolled && Rolled && PS == 0 && !isMoving) {
             if(steps == 6) {
                 TrueRolled = true;
-                DiceTxt.text = "You can move now!";
             }
-            DiceTxt.text = "Roll 6 to move";
             isMoving = false;
             PS = 1;
             Rolled = false; 
-            DiceTxt.text = "Ai's Turn";
+            for (int i = 0; i < TtlNoNames; i++) {
+                UserNames[i].SetActive(false);
+            }
+            UserNames[1].SetActive(true);
         } 
         if(TrueRolled && Rolled && !isMoving && PS == 0) {
             FMove = false;
@@ -59,6 +63,7 @@ public class Player : MonoBehaviour
             yield break;
         }
         isMoving = true;
+        StartSound.Play();
         while(steps>0) {
             Vector3 nextPos = currentRoute.childNodeList[routePosition + 1].position;
             while(MoveToNextNode(nextPos))
@@ -85,7 +90,10 @@ public class Player : MonoBehaviour
         Cam.Focus_Obj = "PlayerAi";
         isMoving = false;
         PS = 1;
-        DiceTxt.text = "Ai's Turn";
+        for (int i = 0; i < TtlNoNames; i++) {
+            UserNames[i].SetActive(false);
+        }
+        UserNames[1].SetActive(true);
     }
 
     bool MoveToNextNode(Vector3 goal) {

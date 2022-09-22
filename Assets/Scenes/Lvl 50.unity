@@ -1843,6 +1843,168 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2661408394674872912, guid: ca903d7a399398d4a96e745677b8c772, type: 3}
   m_PrefabInstance: {fileID: 180311524}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &200049329
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 345428581}
+    m_Modifications:
+    - target: {fileID: 1413777296029315761, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_Name
+      value: DiceRoll
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315764, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 511.067
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 506.873
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000015259
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1014
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315767, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1367933280}
+    - target: {fileID: 1413777296029315767, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 503422656}
+    - target: {fileID: 1413777296029315767, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1978340624}
+    - target: {fileID: 1413777296029315767, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1401236198}
+    - target: {fileID: 1413777296029315767, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 265819134}
+    - target: {fileID: 1413777296029315767, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 1105550494}
+    - target: {fileID: 1413777296029315767, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_Target
+      value: 
+      objectReference: {fileID: 1041931758}
+    - target: {fileID: 1413777296029315767, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RollDice
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315767, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LogChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315767, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: LogChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315767, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: LogChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315767, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: LogChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315767, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: LogChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413777296029315767, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
+      value: LogChange
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+--- !u!224 &200049330 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1413777296029315766, guid: 37338e1789695d040a3dd745f5caf07c, type: 3}
+  m_PrefabInstance: {fileID: 200049329}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &203512381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2934,7 +3096,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1382474272}
-  - {fileID: 737648756}
+  - {fileID: 200049330}
   - {fileID: 76486609}
   - {fileID: 619764148}
   - {fileID: 706859401}
@@ -4923,211 +5085,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4083304175618303698, guid: f6906f4f2c7cf124f9911321f2a6fae8, type: 3}
   m_PrefabInstance: {fileID: 1807910578}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &737648755
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 737648756}
-  - component: {fileID: 737648759}
-  - component: {fileID: 737648758}
-  - component: {fileID: 737648757}
-  m_Layer: 5
-  m_Name: DiceRoll
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &737648756
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737648755}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 345428581}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -923}
-  m_SizeDelta: {x: 418.08, y: 426.285}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &737648757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737648755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 737648758}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1367933280}
-        m_TargetAssemblyTypeName: DiceScript, Assembly-CSharp
-        m_MethodName: RollDice
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 503422656}
-        m_TargetAssemblyTypeName: DiceCheck, Assembly-CSharp
-        m_MethodName: LogChange
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1978340624}
-        m_TargetAssemblyTypeName: DiceCheck, Assembly-CSharp
-        m_MethodName: LogChange
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1401236198}
-        m_TargetAssemblyTypeName: DiceCheck, Assembly-CSharp
-        m_MethodName: LogChange
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 265819134}
-        m_TargetAssemblyTypeName: DiceCheck, Assembly-CSharp
-        m_MethodName: LogChange
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1105550494}
-        m_TargetAssemblyTypeName: DiceCheck, Assembly-CSharp
-        m_MethodName: LogChange
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1041931758}
-        m_TargetAssemblyTypeName: DiceCheck, Assembly-CSharp
-        m_MethodName: LogChange
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &737648758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737648755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &737648759
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737648755}
-  m_CullTransparentMesh: 1
 --- !u!1001 &739105380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10314,7 +10271,7 @@ MonoBehaviour:
   player: {fileID: 1405457156}
   Cam: {fileID: 732031916}
   DiceTxt: {fileID: 1242769600}
-  DiceBtn: {fileID: 737648755}
+  DiceBtn: {fileID: 0}
   Dice: {fileID: 1367933280}
   DShow: {fileID: 1279221544}
   DiceChk1: {fileID: 265819134}
@@ -10583,7 +10540,7 @@ PrefabInstance:
     - target: {fileID: 148429619, guid: f6906f4f2c7cf124f9911321f2a6fae8, type: 3}
       propertyPath: DiceBtn
       value: 
-      objectReference: {fileID: 737648755}
+      objectReference: {fileID: 0}
     - target: {fileID: 148429619, guid: f6906f4f2c7cf124f9911321f2a6fae8, type: 3}
       propertyPath: DiceTxt
       value: 
@@ -10611,7 +10568,7 @@ PrefabInstance:
     - target: {fileID: 541943945, guid: f6906f4f2c7cf124f9911321f2a6fae8, type: 3}
       propertyPath: DiceBtn
       value: 
-      objectReference: {fileID: 737648755}
+      objectReference: {fileID: 0}
     - target: {fileID: 541943945, guid: f6906f4f2c7cf124f9911321f2a6fae8, type: 3}
       propertyPath: DiceTxt
       value: 
@@ -10639,7 +10596,7 @@ PrefabInstance:
     - target: {fileID: 661574487, guid: f6906f4f2c7cf124f9911321f2a6fae8, type: 3}
       propertyPath: DiceBtn
       value: 
-      objectReference: {fileID: 737648755}
+      objectReference: {fileID: 0}
     - target: {fileID: 661574487, guid: f6906f4f2c7cf124f9911321f2a6fae8, type: 3}
       propertyPath: DiceTxt
       value: 
@@ -10659,7 +10616,7 @@ PrefabInstance:
     - target: {fileID: 1046068007, guid: f6906f4f2c7cf124f9911321f2a6fae8, type: 3}
       propertyPath: DiceBtn
       value: 
-      objectReference: {fileID: 737648755}
+      objectReference: {fileID: 0}
     - target: {fileID: 1049477324, guid: f6906f4f2c7cf124f9911321f2a6fae8, type: 3}
       propertyPath: Cam
       value: 
@@ -10675,7 +10632,7 @@ PrefabInstance:
     - target: {fileID: 1049477324, guid: f6906f4f2c7cf124f9911321f2a6fae8, type: 3}
       propertyPath: DiceBtn
       value: 
-      objectReference: {fileID: 737648755}
+      objectReference: {fileID: 0}
     - target: {fileID: 1049477324, guid: f6906f4f2c7cf124f9911321f2a6fae8, type: 3}
       propertyPath: DiceTxt
       value: 
@@ -10703,7 +10660,7 @@ PrefabInstance:
     - target: {fileID: 1579877853, guid: f6906f4f2c7cf124f9911321f2a6fae8, type: 3}
       propertyPath: DiceBtn
       value: 
-      objectReference: {fileID: 737648755}
+      objectReference: {fileID: 0}
     - target: {fileID: 1579877853, guid: f6906f4f2c7cf124f9911321f2a6fae8, type: 3}
       propertyPath: DiceTxt
       value: 
@@ -10731,7 +10688,7 @@ PrefabInstance:
     - target: {fileID: 1880491969, guid: f6906f4f2c7cf124f9911321f2a6fae8, type: 3}
       propertyPath: DiceBtn
       value: 
-      objectReference: {fileID: 737648755}
+      objectReference: {fileID: 0}
     - target: {fileID: 1880491969, guid: f6906f4f2c7cf124f9911321f2a6fae8, type: 3}
       propertyPath: DiceTxt
       value: 
@@ -14042,7 +13999,7 @@ PrefabInstance:
     - target: {fileID: 3478891335884128144, guid: 092f5e8fea2a9524089f66688acec1a8, type: 3}
       propertyPath: DiceBtn
       value: 
-      objectReference: {fileID: 737648755}
+      objectReference: {fileID: 0}
     - target: {fileID: 3478891335884128144, guid: 092f5e8fea2a9524089f66688acec1a8, type: 3}
       propertyPath: DiceTxt
       value: 

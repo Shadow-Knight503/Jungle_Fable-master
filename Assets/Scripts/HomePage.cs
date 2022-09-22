@@ -10,6 +10,6 @@ public class HomePage : MonoBehaviour {
     }
 
     public void LevelPage() {
-        SceneManager.LoadScene("Level_Page");
+        SceneManager.LoadScene("MenuScreen");
     }
 }

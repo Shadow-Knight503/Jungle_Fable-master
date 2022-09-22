@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LvlPage : MonoBehaviour {
     public GameObject LoadPanel;
+    public GameObject RulesPanel;
     public int LvlsUnlocked;
     public GameObject[] Lvls;
     public GameObject[] Buttons;
@@ -39,7 +40,7 @@ public class LvlPage : MonoBehaviour {
     }
 
     public void NxtLvl() {
-        if (Lvli + 1 == TotalBtns - 1) {
+        if (Lvli + 1 == TotalBtns) {
             NxtBtn.SetActive(false);
         }
         if (Lvli + 1 != 0) {
@@ -75,8 +76,20 @@ public class LvlPage : MonoBehaviour {
         }
     }
 
+    public void RulesLoad() {
+        RulesPanel.SetActive(true);
+    }
+
+    public void RulesHide() {
+        RulesPanel.SetActive(false);
+    }
+
     public void LoadHome () {
         SceneManager.LoadScene("HomePage");
+    }
+
+    public void LoadMulti() {
+        SceneManager.LoadScene("Mult-2");
     }
 
     public void QuitGame() {

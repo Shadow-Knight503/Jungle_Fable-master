@@ -15,11 +15,14 @@ public class Player2 : MonoBehaviour
     public TextMeshProUGUI DiceTxt;
     public DiceShow DShow;
     public Player Play;
+    public GameObject[] UserNames;
+    public int TtlNoNames;
     int Num;
     bool FMove = false;
     public bool TrueRolled = false;
     public int PSs;
     public int PSe;
+    public bool Alive = false;
 
     // Start is called before the first frame update
     void Start()
@@ -32,13 +35,14 @@ public class Player2 : MonoBehaviour
         if (!TrueRolled && Rolled && Play.PS == PSs && !isMoving) {
             if(steps == 6) {
                 TrueRolled = true;
-                DiceTxt.text = "You can move now!";
             }
-            DiceTxt.text = "Roll 6 to move";
             isMoving = false;
-            Play.PS = 2;
+            Play.PS = PSe;
             Rolled = false; 
-            DiceTxt.text = "Ai's Turn";
+            for (int i = 0; i < TtlNoNames; i++) {
+                UserNames[i].SetActive(false);
+            }
+            UserNames[PSe].SetActive(true);
         } 
         if(TrueRolled && Rolled && !isMoving && Play.PS == PSs) {
             FMove = false;
@@ -77,6 +81,10 @@ public class Player2 : MonoBehaviour
         }
         isMoving = false;
         Play.PS = PSe;
+        for (int i = 0; i < TtlNoNames; i++) {
+            UserNames[i].SetActive(false);
+        }
+        UserNames[PSe].SetActive(true);
     }
 
     bool MoveToNextNode(Vector3 goal)

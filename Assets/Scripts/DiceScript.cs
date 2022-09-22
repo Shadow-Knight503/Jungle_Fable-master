@@ -22,15 +22,16 @@ public class DiceScript : MonoBehaviour {
         if (Rb.IsSleeping() && !Landed && Thrown) {
             Landed = true;
             Rb.useGravity = false; 
-            
+            DiceBtn.SetActive(true);
+        } else if (Rb.IsSleeping() && !Landed && Thrown) {
+            Landed = true;
+            Rb.useGravity = false; 
         } else if (Rb.IsSleeping() && Landed && Thrown) {
-            Debug.Log("This is immposible ");
             Invoke("ResetDice", 0.5f);
         }
     }
 
     public void RollDice() {
-        Debug.Log("Rolling ?");
         if (!Thrown && !Landed) {
             DiceBtn.SetActive(false);
             Thrown = true; 
@@ -45,12 +46,10 @@ public class DiceScript : MonoBehaviour {
         } else if (Thrown && !Landed) {
             ResetDice();
             RollDice();
-            DiceBtn.SetActive(true);
         }
     }
 
     public void ResetDice () {
-        Debug.Log("Reseting...");
         transform.position = InitPos;
         if (Landed) {
             Thrown = false;
